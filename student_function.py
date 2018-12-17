@@ -83,7 +83,6 @@ def AgeSort_Samll(L):
 
 
 def Save_Function(lst, filename='student.txt'):
-    '''將L內的數據,存到filename中'''
     try:
         f = open(filename,'w') #打開文件
         f.write('+------------+-------+-------+\n')
@@ -107,7 +106,7 @@ def flusho(filename='student.txt'):
 	try:
 		f = open(filename,'r')
 		for x in f: # x綁定末尾到'\n'的字串
-			n = str(x.rstrip()) #把n轉成數字 去掉'\n'
+			n = str(x.rstrip()) #把n轉成字串 去掉'\n'
 			print(n)
 		f.close()
 	except:
